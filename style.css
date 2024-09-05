@@ -1,0 +1,124 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    background-color: crimson;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    height: 85px;
+}
+.pikachu{
+    font-size: 30px;
+    padding-left: 50vh;
+    align-content: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.gallery-container {
+    flex: 1;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.image-viewer {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#current-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+#current-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.nav-buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bomma{
+    align-items: left;
+    height: 85px;
+    width: 150px;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-button:focus {
+    outline: none;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.7;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.thumbnail-active {
+    transform: scale(1.1);
+    opacity: 1;
+    border: 2px solid #000;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
